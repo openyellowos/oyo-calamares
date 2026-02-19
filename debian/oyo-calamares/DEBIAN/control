@@ -1,0 +1,24 @@
+Package: oyo-calamares
+Source: calamares
+Version: 3.3.14.oyo1
+Architecture: amd64
+Maintainer: Jonathan Carter <jcc@debian.org>
+Installed-Size: 11049
+Depends: os-prober, libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libgcc-s1 (>= 3.0), libkf6coreaddons6 (>= 6.0.0), libkf6crash6 (>= 6.0.0), libkf6parts6 (>= 6.0.0), libkpmcore12 (>= 24.05.2), libparted2t64 (>= 3.1), libpwquality1 (>= 1.1.0), libpython3.13 (>= 3.13.0~rc3), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.4.0), libqt6gui6 (>= 6.8.2), libqt6network6 (>= 6.1.2), libqt6qml6 (>= 6.6.0), libqt6quick6 (>= 6.6.0), libqt6quickwidgets6 (>= 6.6.0), libqt6svg6 (>= 6.6.0), libqt6widgets6 (>= 6.7.2), libqt6xml6 (>= 6.6.0), libstdc++6 (>= 14), libyaml-cpp0.8 (>= 0.8.0+dfsg-7)
+Recommends: btrfs-progs, squashfs-tools
+Breaks: calamares-extensions (<< 3.3.12-1)
+Replaces: calamares-extensions (<< 3.3.12-1)
+Section: utils
+Priority: optional
+Homepage: https://github.com/calamares/calamares
+Description: distribution-independent installer framework
+ Calamares is a distribution-independent installer framework.
+ .
+ It provides a graphical installer that can be used with nearly
+ any distribution. This package is suitable for live media on
+ Debian-based systems, and won't be of any particular use on
+ an already installed system.
+ .
+ You will likely want to provide your own config files to match
+ your distribution, reading the Calamares documentation will guide
+ you through that process.
