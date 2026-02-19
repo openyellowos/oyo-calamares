@@ -228,38 +228,19 @@ static void
 applyXkb( const BasicLayoutInfo& settings, AdditionalLayoutInfo& extra )
 {
     QStringList basicArguments = xkbmap_model_args( settings.selectedModel );
-    if ( !extra.additionalLayout.isEmpty() )
-    {
-        if ( !settings.selectedGroup.isEmpty() )
-        {
-            extra.groupSwitcher = "grp:" + settings.selectedGroup;
-        }
-
-        if ( extra.groupSwitcher.isEmpty() )
-        {
-            extra.groupSwitcher = xkbmap_query_grp_option();
-        }
-        if ( extra.groupSwitcher.isEmpty() )
-        {
-            extra.groupSwitcher = "grp:alt_shift_toggle";
-        }
-
-        basicArguments.append(
-            xkbmap_layout_args_with_group_switch( { extra.additionalLayout, settings.selectedLayout },
-                                                  { extra.additionalVariant, settings.selectedVariant },
-                                                  extra.groupSwitcher ) );
-        QProcess::execute( "setxkbmap", basicArguments );
-
-        cDebug() << "xkbmap selection changed to: " << settings.selectedLayout << '-' << settings.selectedVariant
-                 << "(added " << extra.additionalLayout << "-" << extra.additionalVariant
-                 << " since current layout is not ASCII-capable)";
-    }
-    else
-    {
-        basicArguments.append( xkbmap_layout_args( settings.selectedLayout, settings.selectedVariant ) );
-        QProcess::execute( "setxkbmap", basicArguments );
-        cDebug() << "xkbmap selection changed to: " << settings.selectedLayout << '-' << settings.selectedVariant;
-    }
+    // oYo patch:
+    // Respect the live session choice and apply ONLY the selected layout.
+    //
+    // Calamares may decide that the current layout is "not ASCII-capable" and
+    // tries to add an additional layout (often "us"). On some systems
+    // (especially XWayland / root launch), this results in "us,jp" where "us"
+    // becomes active by default and breaks JP key positions like '@' -> '['.
+    //
+    // We intentionally ignore extra.additionalLayout and never add "us".
+    basicArguments.append( xkbmap_layout_args( settings.selectedLayout, settings.selectedVariant ) );
+    QProcess::execute( "setxkbmap", basicArguments );
+    cDebug() << "xkbmap selection changed to: " << settings.selectedLayout << '-' << settings.selectedVariant
+             << "(ignored additional layout " << extra.additionalLayout << "-" << extra.additionalVariant << ')';
 }
 
 static void

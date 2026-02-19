@@ -849,12 +849,18 @@ def prepare_bootloader(fw_type):
     Prepares bootloader.
     Based on value 'efi_boot_loader', it either calls systemd-boot
     or grub to be installed.
-
     :param fw_type:
     :return:
     """
 
-    # Get the boot loader selection from global storage if it is set in the config file
+    efi_boot_loader = None
+
+    # BIOS の場合は efi_boot_loader を使わず grub をインストールして終わり
+    if fw_type != "efi":
+        install_grub(None, fw_type)
+        return
+
+    # UEFI の場合は通常通り設定ファイルを参照
     try:
         gs_name = libcalamares.job.configuration["efiBootLoaderVar"]
         if libcalamares.globalstorage.contains(gs_name):
@@ -864,42 +870,31 @@ def prepare_bootloader(fw_type):
                 f"Specified global storage value not found in global storage")
             return None
     except KeyError:
-        # If the conf value for using global storage is not set, use the setting from the config file.
         try:
             efi_boot_loader = libcalamares.job.configuration["efiBootLoader"]
         except KeyError:
-            if fw_type == "efi":
-                libcalamares.utils.warning("Configuration missing both efiBootLoader and efiBootLoaderVar on an EFI "
-                                           "system, bootloader not installed")
-                return
-            else:
-                pass
+            libcalamares.utils.warning("Configuration missing both efiBootLoader and efiBootLoaderVar on an EFI system, bootloader not installed")
+            return
 
-    # If the user has selected not to install bootloader, bail out here
-    if efi_boot_loader.casefold() == "none":
+    if efi_boot_loader is None or efi_boot_loader.casefold() == "none":
         libcalamares.utils.debug("Skipping bootloader installation since no bootloader was selected")
         return None
 
     efi_directory = libcalamares.globalstorage.value("efiSystemPartition")
 
     if efi_boot_loader == "clr-boot-manager":
-        if fw_type != "efi":
-            # Grub has to be installed first on non-EFI systems
-            install_grub(efi_directory, fw_type)
+        install_grub(efi_directory, fw_type)
         install_clr_boot_manager()
-    elif efi_boot_loader == "systemd-boot" and fw_type == "efi":
+    elif efi_boot_loader == "systemd-boot":
         install_systemd_boot(efi_directory)
-    elif efi_boot_loader == "sb-shim" and fw_type == "efi":
+    elif efi_boot_loader == "sb-shim":
         install_secureboot(efi_directory)
-    elif efi_boot_loader == "refind" and fw_type == "efi":
+    elif efi_boot_loader == "refind":
         install_refind(efi_directory)
-    elif efi_boot_loader == "grub" or fw_type != "efi":
+    elif efi_boot_loader == "grub":
         install_grub(efi_directory, fw_type)
     else:
-        libcalamares.utils.debug("WARNING: the combination of "
-                                 "boot-loader '{!s}' and firmware '{!s}' "
-                                 "is not supported.".format(efi_boot_loader, fw_type))
-
+        libcalamares.utils.debug("WARNING: the combination of boot-loader '{!s}' and firmware '{!s}' is not supported.".format(efi_boot_loader, fw_type))
 
 def run():
     """

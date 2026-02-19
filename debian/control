@@ -39,7 +39,7 @@ Homepage: https://github.com/calamares/calamares
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/extras/calamares
 Vcs-Git: https://salsa.debian.org/qt-kde-team/extras/calamares.git
 
-Package: calamares
+Package: oyo-calamares
 Architecture: linux-any
 Depends: os-prober, ${misc:Depends}, ${shlibs:Depends}
 Recommends: btrfs-progs, squashfs-tools
