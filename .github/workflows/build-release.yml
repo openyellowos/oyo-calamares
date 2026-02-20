@@ -14,12 +14,16 @@ jobs:
           apt-get update
           apt-get install -y --no-install-recommends \
             devscripts \
-            equivs
-          mk-build-deps \
-            --install \
-            --remove \
-            --tool 'apt-get -y --no-install-recommends' \
-            debian/control
+            dpkg-dev
+          if [ -f /etc/apt/sources.list ]; then
+            sed -i 's/^deb /deb deb-src /' /etc/apt/sources.list
+          fi
+          if [ -d /etc/apt/sources.list.d ]; then
+            find /etc/apt/sources.list.d -name '*.sources' -print0 | \
+              xargs -0 -r sed -i 's/^Types: deb$/Types: deb deb-src/'
+          fi
+          apt-get update
+          apt-get build-dep -y --no-install-recommends ./
       - name: Build
         run: dpkg-buildpackage -us -uc
       - name: Collect artifacts
