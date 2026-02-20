@@ -13,42 +13,13 @@ jobs:
         run: |
           apt-get update
           apt-get install -y --no-install-recommends \
-            build-essential \
-            cmake \
-            cryptsetup \
-            debhelper \
             devscripts \
-            dpkg-dev \
-            extra-cmake-modules \
-            gettext \
-            git \
-            gnupg \
-            libboost-python-dev \
-            libkf6config-dev \
-            libkf6coreaddons-dev \
-            libkf6crash-dev \
-            libkf6i18n-dev \
-            libkf6iconthemes-dev \
-            libkf6kio-dev \
-            libkf6parts-dev \
-            libkf6service-dev \
-            libkf6solid-dev \
-            libkpmcore-dev \
-            libparted-dev \
-            libpolkit-qt6-1-dev \
-            libpwquality-dev \
-            libqt6svg6-dev \
-            libyaml-cpp-dev \
-            os-prober \
-            pkg-config \
-            pkg-kde-tools \
-            pkexec \
-            python3 \
-            qml-module-qtquick-layouts \
-            qml-module-qtquick-privatewidgets \
-            qml-module-qtquick-window2 \
-            qml-module-qtquick2 \
-            qt6-base-dev
+            equivs
+          mk-build-deps \
+            --install \
+            --remove \
+            --tool 'apt-get -y --no-install-recommends' \
+            debian/control
       - name: Build
         run: dpkg-buildpackage -us -uc
       - name: Collect artifacts
