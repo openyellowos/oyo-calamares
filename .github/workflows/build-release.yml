@@ -33,6 +33,17 @@ jobs:
             --remove \
             --tool 'apt-get -y --no-install-recommends' \
             debian/control
+
+          # mk-build-deps can complete without all dependencies installed
+          # (for example when package names differ across releases).
+          # Re-check and explicitly install anything still missing so the
+          # build step does not fail immediately in dpkg-checkbuilddeps.
+          if ! dpkg-checkbuilddeps > /tmp/build-deps.log 2>&1; then
+            missing_deps=$(sed -n 's/^dpkg-checkbuilddeps: error: Unmet build dependencies: //p' /tmp/build-deps.log)
+            if [ -n "$missing_deps" ]; then
+              apt-get install -y --no-install-recommends $missing_deps
+            fi
+          fi
       - name: Build
         run: dpkg-buildpackage -us -uc
       - name: Collect artifacts
