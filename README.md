@@ -1,16 +1,15 @@
 # oyo-calamares
 
-`oyo-calamares` は、**GNOME の外観（UI）プリセットをワンクリックで適用**するためのユーティリティ（Debian パッケージ）です。  
-`dconf` を用いて各種 GNOME Shell 拡張機能の設定・有効化を行い、**oYo Original / Windows Style / Mac Style** の 3 プロファイルを切り替えます。  
-UI 選択には `zenity` を使用した簡易 GUI を提供します。
+`oyo-calamares` は、Debian 系ディストリビューション向けの
+**Calamares インストーラー**を提供する Debian パッケージです。
 
 ---
 
 ## リポジトリ構成
 
 - `debian/` : Debian パッケージのメタデータ  
-- `usr/bin/oyo-calamares` : 実行スクリプト本体  
-- `.github/workflows/release.yml` : CI/CD ワークフロー定義  
+- `src/` : Calamares 本体のソースコード  
+- `.github/workflows/build-release.yml` : CI/CD ワークフロー定義  
 
 ---
 
@@ -46,7 +45,7 @@ flowchart LR
    ```
 
 2. **プログラム修正**
-   - `oyo-calamares` 配下を編集する。  
+   - `src/` や `debian/` 配下を編集する。  
    - 必要があれば README.md も修正する。  
 
 3. **changelog 更新**
@@ -227,4 +226,3 @@ in Europe, but feel free to idle.
 Matrix is persistent, and we'll see your message eventually.
 
 * [![Join us on Matrix](https://img.shields.io/badge/Matrix-%23calamares:kde.org-blue)](https://webchat.kde.org/#/room/%23calamares:kde.org) (needs a Matrix account)
-
