@@ -11,10 +11,23 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install build deps
         run: |
+          set -eux
           apt-get update
           apt-get install -y --no-install-recommends \
             devscripts \
             equivs
+          if [ -f /etc/apt/sources.list ]; then
+            awk '
+              /^deb / { print; sub(/^deb /, "deb-src "); print; next }
+              { print }
+            ' /etc/apt/sources.list > /tmp/sources.list
+            mv /tmp/sources.list /etc/apt/sources.list
+          fi
+          if [ -d /etc/apt/sources.list.d ]; then
+            find /etc/apt/sources.list.d -name '*.sources' -print0 | \
+              xargs -0 -r sed -i 's/^Types: deb$/Types: deb deb-src/'
+          fi
+          apt-get update
           mk-build-deps \
             --install \
             --remove \
