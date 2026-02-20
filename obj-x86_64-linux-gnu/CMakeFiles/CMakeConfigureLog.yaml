@@ -1,0 +1,1013 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      The system is: Linux - 6.12.63+deb13-amd64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -g;-O2;-Werror=implicit-function-declaration;-ffile-prefix-map=/home/toshio/oyo-calamares=.;-fstack-protector-strong;-fstack-clash-protection;-Wformat;-Werror=format-security;-fcf-protection;-Wdate-time;-D_FORTIFY_SOURCE=2
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: -g;-O2;-ffile-prefix-map=/home/toshio/oyo-calamares=.;-fstack-protector-strong;-fstack-clash-protection;-Wformat;-Werror=format-security;-fcf-protection;-Wdate-time;-D_FORTIFY_SOURCE=2
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8c10/fast
+        gmake[2]: Entering directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d8c10.dir/build.make CMakeFiles/cmTC_d8c10.dir/build
+        gmake[3]: Entering directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw'
+        Building C object CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d8c10.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d8c10.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fasynchronous-unwind-tables -o /tmp/ccKrwcYW.s
+        GNU C17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 0051dfc1fa4e89ba97760da93f2546f3
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d8c10.dir/'
+         as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o /tmp/ccKrwcYW.s
+        GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_d8c10
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8c10.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'cmTC_d8c10' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d8c10.'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnvbgLP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d8c10 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -z relro -v CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnvbgLP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d8c10 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -z relro -v CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'cmTC_d8c10' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d8c10.'
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-z,relro -v -Wl,-v CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o -o cmTC_d8c10
+        gmake[3]: Leaving directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw'
+        gmake[2]: Leaving directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/14/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8c10/fast]
+        ignore line: [gmake[2]: Entering directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d8c10.dir/build.make CMakeFiles/cmTC_d8c10.dir/build]
+        ignore line: [gmake[3]: Entering directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-L0qgPw']
+        ignore line: [Building C object CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d8c10.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d8c10.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fasynchronous-unwind-tables -o /tmp/ccKrwcYW.s]
+        ignore line: [GNU C17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0051dfc1fa4e89ba97760da93f2546f3]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d8c10.dir/']
+        ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o /tmp/ccKrwcYW.s]
+        ignore line: [GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_d8c10]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8c10.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'cmTC_d8c10' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d8c10.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnvbgLP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d8c10 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -z relro -v CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccnvbgLP.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d8c10] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..]
+          arg [-zrelro] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnvbgLP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d8c10 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -z relro -v CMakeFiles/cmTC_d8c10.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d4664/fast
+        gmake[2]: Entering directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d4664.dir/build.make CMakeFiles/cmTC_d4664.dir/build
+        gmake[3]: Entering directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD'
+        Building CXX object CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4664.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d4664.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fasynchronous-unwind-tables -o /tmp/cco2BTA2.s
+        GNU C++17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/14"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/14
+         /usr/include/x86_64-linux-gnu/c++/14
+         /usr/include/c++/14/backward
+         /usr/lib/gcc/x86_64-linux-gnu/14/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: a0e1d70a4b6c50c7ed1b3d36dfd3f9a4
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4664.dir/'
+         as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o /tmp/cco2BTA2.s
+        GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_d4664
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4664.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Debian 14.2.0-19) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'cmTC_d4664' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d4664.'
+         /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxGGnP5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d4664 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -z relro -v CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 14.2.0
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxGGnP5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d4664 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -z relro -v CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Debian) 2.44
+        COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'cmTC_d4664' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d4664.'
+        /usr/bin/c++ -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-z,relro -v -Wl,-v CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d4664
+        gmake[3]: Leaving directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD'
+        gmake[2]: Leaving directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/14]
+          add: [/usr/include/x86_64-linux-gnu/c++/14]
+          add: [/usr/include/c++/14/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/14] ==> [/usr/include/x86_64-linux-gnu/c++/14]
+        collapse include dir [/usr/include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/14/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/x86_64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/gcc/x86_64-linux-gnu/14/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d4664/fast]
+        ignore line: [gmake[2]: Entering directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD']
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d4664.dir/build.make CMakeFiles/cmTC_d4664.dir/build]
+        ignore line: [gmake[3]: Entering directory '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-72nscD']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2    -v -o CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4664.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d4664.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -fcf-protection=full -fasynchronous-unwind-tables -o /tmp/cco2BTA2.s]
+        ignore line: [GNU C++17 (Debian 14.2.0-19) version 14.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.1 differs from library version 4.2.2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/14"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/14]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/14]
+        ignore line: [ /usr/include/c++/14/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: a0e1d70a4b6c50c7ed1b3d36dfd3f9a4]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4664.dir/']
+        ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o /tmp/cco2BTA2.s]
+        ignore line: [GNU assembler version 2.44 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_d4664]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4664.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 14.2.0-19' --with-bugurl=file:///usr/share/doc/gcc-14/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust --prefix=/usr --with-gcc-major-version-only --program-suffix=-14 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-14-14.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (Debian 14.2.0-19) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/14/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/14/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/14/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/toshio/oyo-calamares=.' '-fstack-protector-strong' '-fstack-clash-protection' '-Wformat=1' '-fcf-protection=full' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-o' 'cmTC_d4664' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d4664.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/14/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxGGnP5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d4664 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -z relro -v CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccxGGnP5.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d4664] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..]
+          arg [-zrelro] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/14/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/14/lto-wrapper -plugin-opt=-fresolution=/tmp/ccxGGnP5.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d4664 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/14/../../.. -z relro -v CMakeFiles/cmTC_d4664.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:68 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Debian) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake:155 (include)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:20 (find_dependency)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:55 (include)"
+      - "CMakeLists.txt:190 (find_package)"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-5Ljqd0"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-5Ljqd0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-5Ljqd0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ba0d/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-5Ljqd0' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8ba0d.dir/build.make CMakeFiles/cmTC_8ba0d.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-5Ljqd0' に入ります
+        Building C object CMakeFiles/cmTC_8ba0d.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -o CMakeFiles/cmTC_8ba0d.dir/src.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-5Ljqd0/src.c
+        Linking C executable cmTC_8ba0d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ba0d.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-z,relro  CMakeFiles/cmTC_8ba0d.dir/src.c.o -o cmTC_8ba0d
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-5Ljqd0' から出ます
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-5Ljqd0' から出ます
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:55 (include)"
+      - "CMakeLists.txt:190 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-wcGega"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-wcGega"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-wcGega'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b82d/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-wcGega' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9b82d.dir/build.make CMakeFiles/cmTC_9b82d.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-wcGega' に入ります
+        Building CXX object CMakeFiles/cmTC_9b82d.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_STDATOMIC  -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -o CMakeFiles/cmTC_9b82d.dir/src.cxx.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-wcGega/src.cxx
+        Linking CXX executable cmTC_9b82d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b82d.dir/link.txt --verbose=1
+        /usr/bin/c++ -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-z,relro  CMakeFiles/cmTC_9b82d.dir/src.cxx.o -o cmTC_9b82d
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-wcGega' から出ます
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-wcGega' から出ます
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-4TQrQ7"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-4TQrQ7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/toshio/oyo-calamares/CMakeModules;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-4TQrQ7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6c03f/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-4TQrQ7' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6c03f.dir/build.make CMakeFiles/cmTC_6c03f.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-4TQrQ7' に入ります
+        Building C object CMakeFiles/cmTC_6c03f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=gnu99 -o CMakeFiles/cmTC_6c03f.dir/CheckFunctionExists.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-4TQrQ7/CheckFunctionExists.c
+        Linking C executable cmTC_6c03f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c03f.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=XOpenDisplay -Wl,-z,relro  CMakeFiles/cmTC_6c03f.dir/CheckFunctionExists.c.o -o cmTC_6c03f  /usr/lib/x86_64-linux-gnu/libX11.so
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-4TQrQ7' から出ます
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-4TQrQ7' から出ます
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-b9dzaq"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-b9dzaq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/toshio/oyo-calamares/CMakeModules;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-b9dzaq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3353f/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-b9dzaq' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3353f.dir/build.make CMakeFiles/cmTC_3353f.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-b9dzaq' に入ります
+        Building C object CMakeFiles/cmTC_3353f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=gethostbyname -std=gnu99 -o CMakeFiles/cmTC_3353f.dir/CheckFunctionExists.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-b9dzaq/CheckFunctionExists.c
+        Linking C executable cmTC_3353f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3353f.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=gethostbyname -Wl,-z,relro  CMakeFiles/cmTC_3353f.dir/CheckFunctionExists.c.o -o cmTC_3353f
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-b9dzaq' から出ます
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-b9dzaq' から出ます
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Nfezvb"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Nfezvb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/toshio/oyo-calamares/CMakeModules;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Nfezvb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c956/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Nfezvb' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1c956.dir/build.make CMakeFiles/cmTC_1c956.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Nfezvb' に入ります
+        Building C object CMakeFiles/cmTC_1c956.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=connect -std=gnu99 -o CMakeFiles/cmTC_1c956.dir/CheckFunctionExists.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Nfezvb/CheckFunctionExists.c
+        Linking C executable cmTC_1c956
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c956.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=connect -Wl,-z,relro  CMakeFiles/cmTC_1c956.dir/CheckFunctionExists.c.o -o cmTC_1c956
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Nfezvb' から出ます
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-Nfezvb' から出ます
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nneJLn"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nneJLn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/toshio/oyo-calamares/CMakeModules;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nneJLn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6ac6a/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nneJLn' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6ac6a.dir/build.make CMakeFiles/cmTC_6ac6a.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nneJLn' に入ります
+        Building C object CMakeFiles/cmTC_6ac6a.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=remove -std=gnu99 -o CMakeFiles/cmTC_6ac6a.dir/CheckFunctionExists.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nneJLn/CheckFunctionExists.c
+        Linking C executable cmTC_6ac6a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ac6a.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=remove -Wl,-z,relro  CMakeFiles/cmTC_6ac6a.dir/CheckFunctionExists.c.o -o cmTC_6ac6a
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nneJLn' から出ます
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-nneJLn' から出ます
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake:41 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6KIO/KF6KIOConfig.cmake:50 (find_dependency)"
+      - "/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/KF6Parts/KF6PartsConfig.cmake:38 (find_dependency)"
+      - "src/modules/interactiveterminal/CMakeLists.txt:7 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-frGzpU"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-frGzpU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/toshio/oyo-calamares/CMakeModules;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-frGzpU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9fb54/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-frGzpU' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9fb54.dir/build.make CMakeFiles/cmTC_9fb54.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-frGzpU' に入ります
+        Building C object CMakeFiles/cmTC_9fb54.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=shmat -std=gnu99 -o CMakeFiles/cmTC_9fb54.dir/CheckFunctionExists.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-frGzpU/CheckFunctionExists.c
+        Linking C executable cmTC_9fb54
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fb54.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall -DCHECK_FUNCTION_EXISTS=shmat -Wl,-z,relro  CMakeFiles/cmTC_9fb54.dir/CheckFunctionExists.c.o -o cmTC_9fb54
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-frGzpU' から出ます
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-frGzpU' から出ます
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "src/modules/users/CMakeLists.txt:21 (check_symbol_exists)"
+    checks:
+      - "Looking for crypt_gensalt"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-1ZyI5c"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-1ZyI5c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/toshio/oyo-calamares/CMakeModules;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAS_CRYPT_GENSALT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-1ZyI5c'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_569ea/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-1ZyI5c' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_569ea.dir/build.make CMakeFiles/cmTC_569ea.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-1ZyI5c' に入ります
+        Building C object CMakeFiles/cmTC_569ea.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -std=gnu99 -o CMakeFiles/cmTC_569ea.dir/CheckSymbolExists.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-1ZyI5c/CheckSymbolExists.c
+        Linking C executable cmTC_569ea
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_569ea.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O2 -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -Wall  -Wl,-z,relro  CMakeFiles/cmTC_569ea.dir/CheckSymbolExists.c.o -o cmTC_569ea  -lcrypt
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-1ZyI5c' から出ます
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-1ZyI5c' から出ます
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeModules/FindLIBPARTED.cmake:55 (CHECK_FUNCTION_EXISTS)"
+      - "src/modules/welcome/CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for ped_file_system_clobber"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/toshio/oyo-calamares/CMakeModules;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBPARTED_FILESYSTEM_SUPPORT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84458/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_84458.dir/build.make CMakeFiles/cmTC_84458.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa' に入ります
+        Building C object CMakeFiles/cmTC_84458.dir/CheckFunctionExists.c.o
+        /usr/bin/cc  -I/usr/include/parted -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -DCHECK_FUNCTION_EXISTS=ped_file_system_clobber -std=gnu99 -o CMakeFiles/cmTC_84458.dir/CheckFunctionExists.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa/CheckFunctionExists.c
+        Linking C executable cmTC_84458
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84458.dir/link.txt --verbose=1
+        /usr/bin/ld: CMakeFiles/cmTC_84458.dir/CheckFunctionExists.c.o: in function `main':
+        ./obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa/./obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa/CheckFunctionExists.c:17:(.text.startup+0x10): undefined reference to `ped_file_system_clobber'
+        collect2: error: ld returned 1 exit status
+        /usr/bin/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -DCHECK_FUNCTION_EXISTS=ped_file_system_clobber -Wl,-z,relro  CMakeFiles/cmTC_84458.dir/CheckFunctionExists.c.o -o cmTC_84458  /usr/lib/x86_64-linux-gnu/libparted.so /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so
+        gmake[3]: *** [CMakeFiles/cmTC_84458.dir/build.make:104: cmTC_84458] エラー 1
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa' から出ます
+        gmake[2]: *** [Makefile:134: cmTC_84458/fast] エラー 2
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-LYWmsa' から出ます
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "CMakeModules/FindLIBPARTED.cmake:56 (CHECK_FUNCTION_EXISTS)"
+      - "src/modules/welcome/CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for ped_file_system_resize"
+    directories:
+      source: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-rszOwq"
+      binary: "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-rszOwq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2"
+      CMAKE_C_FLAGS_DEBUG: "-Og -g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,relro"
+      CMAKE_MODULE_PATH: "/usr/share/ECM/modules/;/usr/share/ECM/find-modules/;/usr/share/ECM/kde-modules/;/home/toshio/oyo-calamares/CMakeModules;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin;/usr/lib/x86_64-linux-gnu/cmake/Qt6;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "LIBPARTED_FS_RESIZE_LIBRARY_SUPPORT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-rszOwq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ca6fa/fast
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-rszOwq' に入ります
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ca6fa.dir/build.make CMakeFiles/cmTC_ca6fa.dir/build
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-rszOwq' に入ります
+        Building C object CMakeFiles/cmTC_ca6fa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc  -I/usr/include/parted -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -DCHECK_FUNCTION_EXISTS=ped_file_system_resize -std=gnu99 -o CMakeFiles/cmTC_ca6fa.dir/CheckFunctionExists.c.o -c /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-rszOwq/CheckFunctionExists.c
+        Linking C executable cmTC_ca6fa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca6fa.dir/link.txt --verbose=1
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_sync_fast'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_timer_destroy_nested'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_exception_throw'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_new'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_assert'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_init'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_timer_set_state_name'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_read'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_file_system_probe_specific'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_test_sector_inside'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_read_alloc'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_exception_leave_all'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_timer_update'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_device_open'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `uuid_generate'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_constraint_new'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_malloc'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_set'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_destroy'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_duplicate'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_write'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_unit_format'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_sync'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_file_system_probe'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ptt_geom_clear_sectors'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_alignment_any'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_device_close'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_map'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_exception_fetch_all'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_test_equal'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_test_overlap'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_set_end'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_alignment_init'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_exception_catch'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_timer_reset'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `fat16_type'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `fat32_type'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_geometry_test_inside'
+        /usr/bin/ld: /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so: undefined reference to `ped_timer_new_nested'
+        collect2: error: ld returned 1 exit status
+        /usr/bin/cc -g -O2 -Werror=implicit-function-declaration -ffile-prefix-map=/home/toshio/oyo-calamares=. -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -Wdate-time -D_FORTIFY_SOURCE=2 -DCHECK_FUNCTION_EXISTS=ped_file_system_resize -Wl,-z,relro  CMakeFiles/cmTC_ca6fa.dir/CheckFunctionExists.c.o -o cmTC_ca6fa  /usr/lib/x86_64-linux-gnu/libparted.so /usr/lib/x86_64-linux-gnu/libparted-fs-resize.so
+        gmake[3]: *** [CMakeFiles/cmTC_ca6fa.dir/build.make:104: cmTC_ca6fa] エラー 1
+        gmake[3]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-rszOwq' から出ます
+        gmake[2]: *** [Makefile:134: cmTC_ca6fa/fast] エラー 2
+        gmake[2]: ディレクトリ '/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/CMakeFiles/CMakeScratch/TryCompile-rszOwq' から出ます
+        
+      exitCode: 2
+...

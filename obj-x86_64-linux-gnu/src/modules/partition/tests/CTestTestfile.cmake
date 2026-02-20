@@ -1,0 +1,18 @@
+# CMake generated Testfile for 
+# Source directory: /home/toshio/oyo-calamares/src/modules/partition/tests
+# Build directory: /home/toshio/oyo-calamares/obj-x86_64-linux-gnu/src/modules/partition/tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(partitionjobtest "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/partitionjobtest")
+set_tests_properties(partitionjobtest PROPERTIES  ENVIRONMENT "QT_PLUGIN_PATH=/home/toshio/oyo-calamares/obj-x86_64-linux-gnu" _BACKTRACE_TRIPLES "/usr/share/ECM/modules/ECMAddTests.cmake;123;add_test;/home/toshio/oyo-calamares/CMakeModules/CalamaresAddTest.cmake;32;ecm_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;23;calamares_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;0;")
+add_test(partitionclearmountsjobtest "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/partitionclearmountsjobtest")
+set_tests_properties(partitionclearmountsjobtest PROPERTIES  ENVIRONMENT "QT_PLUGIN_PATH=/home/toshio/oyo-calamares/obj-x86_64-linux-gnu" _BACKTRACE_TRIPLES "/usr/share/ECM/modules/ECMAddTests.cmake;123;add_test;/home/toshio/oyo-calamares/CMakeModules/CalamaresAddTest.cmake;32;ecm_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;38;calamares_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;0;")
+add_test(partitioncreatelayoutstest "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/partitioncreatelayoutstest")
+set_tests_properties(partitioncreatelayoutstest PROPERTIES  ENVIRONMENT "QT_PLUGIN_PATH=/home/toshio/oyo-calamares/obj-x86_64-linux-gnu" _BACKTRACE_TRIPLES "/usr/share/ECM/modules/ECMAddTests.cmake;123;add_test;/home/toshio/oyo-calamares/CMakeModules/CalamaresAddTest.cmake;32;ecm_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;45;calamares_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;0;")
+add_test(partitionautomounttest "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/partitionautomounttest")
+set_tests_properties(partitionautomounttest PROPERTIES  ENVIRONMENT "QT_PLUGIN_PATH=/home/toshio/oyo-calamares/obj-x86_64-linux-gnu" _BACKTRACE_TRIPLES "/usr/share/ECM/modules/ECMAddTests.cmake;123;add_test;/home/toshio/oyo-calamares/CMakeModules/CalamaresAddTest.cmake;32;ecm_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;57;calamares_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;0;")
+add_test(partitiondevicestest "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/partitiondevicestest")
+set_tests_properties(partitiondevicestest PROPERTIES  ENVIRONMENT "QT_PLUGIN_PATH=/home/toshio/oyo-calamares/obj-x86_64-linux-gnu" _BACKTRACE_TRIPLES "/usr/share/ECM/modules/ECMAddTests.cmake;123;add_test;/home/toshio/oyo-calamares/CMakeModules/CalamaresAddTest.cmake;32;ecm_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;63;calamares_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;0;")
+add_test(partitionconfigtest "/home/toshio/oyo-calamares/obj-x86_64-linux-gnu/partitionconfigtest")
+set_tests_properties(partitionconfigtest PROPERTIES  ENVIRONMENT "QT_PLUGIN_PATH=/home/toshio/oyo-calamares/obj-x86_64-linux-gnu" _BACKTRACE_TRIPLES "/usr/share/ECM/modules/ECMAddTests.cmake;123;add_test;/home/toshio/oyo-calamares/CMakeModules/CalamaresAddTest.cmake;32;ecm_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;70;calamares_add_test;/home/toshio/oyo-calamares/src/modules/partition/tests/CMakeLists.txt;0;")
