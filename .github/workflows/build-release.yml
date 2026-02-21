@@ -16,6 +16,8 @@ jobs:
           apt-get install -y --no-install-recommends \
             devscripts \
             equivs
+
+          # debian:trixie イメージは debian.sources の場合が多いので deb-src を有効化
           if [ -f /etc/apt/sources.list ]; then
             awk '
               /^deb / { print; sub(/^deb /, "deb-src "); print; next }
@@ -27,23 +29,15 @@ jobs:
             find /etc/apt/sources.list.d -name '*.sources' -print0 | \
               xargs -0 -r sed -i 's/^Types: deb$/Types: deb deb-src/'
           fi
+
           apt-get update
+
+          # Build-Depends を debian/control から全部入れる
           mk-build-deps \
             --install \
             --remove \
             --tool 'apt-get -y --no-install-recommends' \
             debian/control
-
-          # mk-build-deps can complete without all dependencies installed
-          # (for example when package names differ across releases).
-          # Re-check and explicitly install anything still missing so the
-          # build step does not fail immediately in dpkg-checkbuilddeps.
-          if ! dpkg-checkbuilddeps > /tmp/build-deps.log 2>&1; then
-            missing_deps=$(sed -n 's/^dpkg-checkbuilddeps: error: Unmet build dependencies: //p' /tmp/build-deps.log)
-            if [ -n "$missing_deps" ]; then
-              apt-get install -y --no-install-recommends $missing_deps
-            fi
-          fi
       - name: Build
         run: dpkg-buildpackage -us -uc
       - name: Collect artifacts
