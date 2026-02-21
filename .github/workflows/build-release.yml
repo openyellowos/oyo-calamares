@@ -41,6 +41,7 @@ jobs:
       - name: Build
         run: dpkg-buildpackage -us -uc
       - name: Collect artifacts
+        shell: bash
         run: |
           mkdir -p dist
           shopt -s nullglob
